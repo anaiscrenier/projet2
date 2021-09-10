@@ -6,6 +6,11 @@
     font-family: "Raleway", "Sans serif";
     margin: 0 auto;
     box-sizing: border-box;
+   
+  }
+  .containerclass{
+    max-width: 1500px;
+    margin: 0 auto;
     
   }
 
@@ -34,7 +39,7 @@
     align-items:center;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin: 10px;
+   
   }
   nav{
     display: flex;
@@ -274,9 +279,7 @@
     padding-left: 8px;
   }
   /**************************************************** POPULAIRES ***************************************************/
-  .hotelpopulaire{
-    margin-top: -10px;
-  }
+  
 
   #pluspopulaires{
     background-color: #f2f2f2;
@@ -284,14 +287,6 @@
     width: 30%;
     padding: 20px;
     
-  }
-
-  .fa-chart-line:before {
-    position: absolute;
-    right: 43px;
-    margin-top:-40px;
-    color: black;
-    font-size: 20px;
   }
 
 
@@ -377,9 +372,9 @@
 
   /*  Je donne une bordure et une ombre aux grandes cartes*/
   .Imageseule {
-      border-bottom: 1px solid #f2f2f2;
-      box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
-  }
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
+}
 
   /*  Je donne une bordure et une ombre aux petites cartes situées en haut*/
   .ActiviteImage-top, .ActiviteImage-top2 {
@@ -421,14 +416,15 @@
   footer {
       display: flex;
       background-color: #f2f2f2;
+      flex-wrap: wrap;
   }
 
   /* J'aligne les éléments "enfants" à l'intérieur des champs/ colonnes*/
 
   .footer-champs {   
-      flex-flow: column nowrap;
-      margin: 20px 350px 40px 50px;
+      flex: 20%;
       font-size: 1.2em;
+      padding-left: 50px;
   }
 
   /* Alignements, on gére l'espacement entre les lignes, enlève les puces, couleur */
@@ -450,7 +446,7 @@
   }
   
     /*************************************************** MEDIA QUERIES ***********************************************/
-  @media screen and (max-device-width: 768px) /* pour que l'écran s'adapte a tous écran de smartphnes */
+  @media screen and (max-width: 768px) /* pour que l'écran s'adapte a tous écran de smartphnes */
   {
     /************************************************** HEADER *******************************************************/
     .header{
@@ -523,7 +519,7 @@
   /***************************************************HEBERGEMENT*****************************************************/
     .hebergementETpopulaire {
     flex-direction: column-reverse;/* la parti les plus populaire passe en haut avec cette propriete*/
-    width: 93%;
+    width: 100%;
     }
     
     #Hebergements{
@@ -535,7 +531,7 @@
 
     .hebergementmarseille{
       flex-direction: column;
-      width: 110%;
+      width: 100%;
     }
     
     .showMore{
@@ -545,7 +541,7 @@
     }
     /***************************************************HEBERGEMENT POPULAIRE*****************************************/
     #pluspopulaires{
-      width: 102%;
+      width: 100%;
       margin: 0;
       border-radius: inherit;
     }
@@ -557,12 +553,31 @@
     /*************************************************** ACTIVITES ***************************************************/
  
     .containerActivites{
-      display: flex;
-      
-      
+      flex-direction: column;
+      align-items: flex-start;
+       
     }
-  
- 
-} 
+  .ActiviteImage{
+    width:100%;
+    
+  }
+   
+  .activite1img, .activite4img{
+   
+    height:160px; 
+  }
 
+    /*************************************************** FOOTER ***************************************************/
+
+   
+    .footer-champs{
+      margin: 20px 33px 40px 50px;
+      font-size: 15px;
+     flex-direction: column;
+     
+    }
+    .footer-champs h4{
+      padding-bottom: 10px;
+    }
+} 
 
