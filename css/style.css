@@ -1,583 +1,551 @@
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-
-  /***************************************************** GENERAL *****************************************************/
-
-  body {
-    font-family: "Raleway", "Sans serif";
-    margin: 0 auto;
-    box-sizing: border-box;
-   
-  }
-  .containerclass{
-    max-width: 1500px;
-    margin: 0 auto;
-    
-  }
-
-  ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
-  h3{
-    font-weight: 700;
-  }
-
-  /******************************************************* HEADER ****************************************************/
-
-  header{
-    justify-content: space-between;
-    margin-bottom: 35px;
-    display: flex;
-    align-items:center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-   
-  }
-  nav{
-    display: flex;
-    align-items: center;
-  }
-
-
-  nav li a {
-    padding: 30px;
-  }
-
-  .signUp{
-    color: #0065FC;
-    font-weight: 700;
-    padding: 40px 40px 0;
-  
-  }
-
-  nav li a:hover{
-    color: #0065FC;
-    border-top: 1px solid #0065FC;
-    
-  }
-
-  /*************************************************** BARRE DE RECHERCHE *********************************************/
-
-  .search{
-    margin-bottom: 30px;
-    margin-left: 20px;
-  }
-
-  .search h2{
-    margin-bottom: 10px;
-  }
-
-  .search p{
-    margin-top: 10px;
-  }
-
-  .searchBar{
-    margin-bottom: 30px;
-    height: 50px;
-    display: flex;
-  }
-
-  .input_icon{
-    background-color: #f2f2f2;
-    border-radius: 15px 0 0 15px;
-    width: 50px;
-    flex-shrink: 0;
-    text-align: center;
-    padding-top: 12px;
-  }
-
-  .input_icon i{
-    margin: auto;
-    font-size: 1.2rem;
-  }
-
-  .searchInput{
-    border: 1px solid #f2f2f2;
-    padding: 0 0 0 15px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    width: 230px;
-  }
-
-  .searchInput::placeholder{
-    color: #c2c2c2;
-  }
-
-  .searchButton{
-    width: 130px;
-    background-color: #0065FC;
-    border: none;
-    padding: 0;
-    border-radius: 0 15px 15px 0;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    cursor: pointer;
-  
-  }
-
-  .searchButton i{
-    display: none;
-  }
-  /*************************************************** FILTRES *******************************************************/
-
-
-  .filters{
-    
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    
-  }
-
-  .filter{
-    align-items: center;
-    height: 46px;
-    border: 2px solid #f2f2f2;
-    border-left: none;
-    margin-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
-    display: flex;
-
-  }
-  .textFilter{
-    
-    align-self: center;
-  }
-
-  .filter span{
-    padding-left: 12px;
-  }
-
-  .filter:hover{
-    cursor: pointer;
-    border-color: #0065FC;
-    color: #0065FC;
-  }
-
-
-  .iconFilter{
-    position: relative;
-    right: 1px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #DEEBFF;
-    display: flex;
-  }
-
-  .iconFilter i{
-    margin: auto;
-    color: #0065FC;
-    display: flex;
-    
-  }
-  .containerInfo{
-    display:flex;
-  }
-
-  .iconInfo{
-    height: 20px;
-    width: 20px;
-    border: 1px solid #f2f2f2;
-    border-radius: 1rem;
-    margin-right: 10px;
-    display: flex;
-
-  }
-
-  .iconInfo i{
-    margin: auto;
-    font-size: .9rem;
-    color: #0065FC;  
-    display: flex;
-    
-  }
-
-
-  /* ************************************* PARAMETRES HEBERGEMENT ET POPULAIRES ***************************************/
-
-  .hebergementETpopulaire {
-    display: flex;
-    margin: 25px 0 50px;
-    
-  }
-
-  /************************************************** HEBERGEMENTS ***************************************************/
-
-
-  #Hebergements {
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    width: 62%;
-    padding: 20px;
-    margin: 0 25px 0 0;
-  }
-
-  .hebergementmarseille {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .hotel {
-    flex: 30%;
-    background: white;
-    border-radius: 20px;
-    padding: 5px;
-    box-sizing: border-box;
-    margin: 0 5px 20px 5px;
-    box-shadow: 0 5px 16px;
-    
-  }
-
-  .hotel img {
-    background-color: white;
-    border-radius: 15px 15px 0px 0px;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-  }
-
-  .hotel p {
-    margin: 5px 10px;
-    font-weight: 100;
-  }
-
-  .hotel h3 {
-    margin: 3px 10px;
-  }
-
-  .etoilesHebergement{
-    margin: 3px 10px;
-    color: #0065FC;
-  }
-
-  .greyStar{
-    color: #c1c1c1;
-  }
-
-  .main {
-    display: flex;
-  }
-
-  .afficherplus {
-    color: black;
-    padding-left: 8px;
-  }
-  /**************************************************** POPULAIRES ***************************************************/
-  
-
-  #pluspopulaires{
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    width: 30%;
-    padding: 20px;
-    
-  }
-
-
-  .populaireImage{
-    height: 145px;
-    border: 5px solid #fff;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 7px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .populaireImage img{
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-  }
-
-  .populaireDescription{
-    flex: 1;
-    background-color: #fff;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    display: flex;
-  }
-
-  .hotelName{
-    margin: 0;
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-
-  .etoilesPopulaire{
-    color: #0065FC;
-  }
-
-  .greyStar{
-    color: #c1c1c1;
-  }
-  .populaireDescription .hotelName + p{
-    margin-top: 8px;
-    margin-bottom: 0;
-  }
-
-  .containerHotelsPopular{
-  box-sizing: content-box;
-  width: 100%;
-  }
-
-
-  /**************************************************** ACTIVITES ****************************************************/
-
-  /* Mise en forme du titre de la section */
-  #Activites h2 {
-      margin-left: 50px;
-  }
-
-  /* J'aligne mes articles entre eux */
-  .containerActivites {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin: 50px;
-  }
-
-  /* Je donne une taille, des marges et couleur de fond à mes articles/cartes */
-  .ActiviteImage {
-      background-color: #ffffff;
-      margin: 20px 0 20px 0;   
-      border-radius: 20px ; 
-      width: 22%; 
-  }
-
-  /* Je donne une marge au titre h3 de mes cartes */
-
-  .ActiviteImage h3 {
-      margin-left: 20px;
-  }
-
-  /*  Je donne une bordure et une ombre aux grandes cartes*/
-  .Imageseule {
-    border-bottom: 1px solid #f2f2f2;
-    box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75); 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+/***************************************************** GENERAL *****************************************************/
+
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.containerclass {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-  /*  Je donne une bordure et une ombre aux petites cartes situées en haut*/
-  .ActiviteImage-top, .ActiviteImage-top2 {
-      border-bottom: 1px solid #f2f2f2; 
-      box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-  }
+ nav ul {
+  list-style-type: none;
+  display: flex;
+}
 
-  /*  Je donne une bordure et une ombre aux petites cartes situées en bas + une marge supérieure*/
-  .ActiviteImage-bottom, .ActiviteImage-bottom2 {
-      border: 1px solid #f2f2f2;
-      margin-top: 40px;
-      box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  /* Je donne une tailles aux grandes images*/
+h3 {
+  font-weight: 700;
+}
 
-  .activite1img, .activite4img {
-      width: 100%;
-      height: 420px;
-      border-radius: 20px 20px 0  0; 
-      object-fit: cover;
-      object-position: center;
-  }
+/******************************************************* HEADER ****************************************************/
 
-  /* Je donne une tailles aux petites images*/
-
-  .activite2img, .activite3img, .activite5img, .activite6img {
-      width: 100%; 
-      height: 160px; 
-      border-radius: 20px 20px 0 0;
-      object-fit: cover;
-      object-position: center;
-  }
-
-
-  /***************************************************** FOOTER ******************************************************/
-
-  /* Alignement et couleur de fond du footer */
-  footer {
-      display: flex;
-      background-color: #f2f2f2;
-      flex-wrap: wrap;
-  }
-
-  /* J'aligne les éléments "enfants" à l'intérieur des champs/ colonnes*/
-
-  .footer-champs {   
-      flex: 20%;
-      font-size: 1.2em;
-      padding-left: 50px;
-  }
-
-  /* Alignements, on gére l'espacement entre les lignes, enlève les puces, couleur */
-
-  .footer-champs ul {
-      display: flex;
-      flex-flow: column nowrap;
-      line-height: 2em;
-      text-decoration: none;
-      color: rgb(61, 60, 60);
-      font-weight: 500;
-      padding: 0;
-  }
-
-  .footer-champs h4 
-  {
-      font-size: 1.2em;
-      margin-bottom: 0;  
-  }
+header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   
-    /*************************************************** MEDIA QUERIES ***********************************************/
-  @media screen and (max-width: 768px) /* pour que l'écran s'adapte a tous écran de smartphnes */
-  {
-    /************************************************** HEADER *******************************************************/
-    .header{
-    flex-direction: column;
-    margin: 0;
-    }
-    /*************************************************** RECHERCHE ***************************************************/
+}
+nav {
+  display: flex;
+  align-items: center;
+}
 
-  .search{
+
+nav ul{
+  list-style-type: none;
+  padding: 30px;
+  display: flex;
+}
+
+nav li a {
+  padding: 30px;
+}
+
+.signUp {
+  color: #0065fc;
+  font-weight: 700;
+
+}
+
+nav li a:hover {
+  color: #0065fc;
+  border-top: 1px solid #0065fc;
+}
+
+/*************************************************** BARRE DE RECHERCHE *********************************************/
+
+.search {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.search h2 {
+  margin-bottom: 10px;
+}
+
+.search p {
+  margin-top: 10px;
+}
+
+.searchBar {
+  margin-bottom: 30px;
+  height: 50px;
+  display: flex;
+}
+
+.input_icon {
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  width: 50px;
+  flex-shrink: 0;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.input_icon i {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.searchInput {
+  border: 1px solid #f2f2f2;
+  padding: 0 0 0 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 230px;
+}
+
+.searchInput::placeholder {
+  color: #c2c2c2;
+}
+
+.searchButton {
+  width: 130px;
+  background-color: #0065fc;
+  border: none;
+  padding: 0;
+  border-radius: 0 15px 15px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.searchButton i {
+  display: none;
+}
+/*************************************************** FILTRES *******************************************************/
+
+.filters {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.filter {
+  align-items: center;
+  height: 46px;
+  border: 2px solid #f2f2f2;
+  border-left: none;
+  margin-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  display: flex;
+}
+.textFilter {
+  align-self: center;
+}
+
+.filter span {
+  padding-left: 12px;
+}
+
+.filter:hover {
+  cursor: pointer;
+  border-color: #0065fc;
+  color: #0065fc;
+}
+
+.iconFilter {
+  position: relative;
+  right: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #deebff;
+  display: flex;
+}
+
+.iconFilter i {
+  margin: auto;
+  color: #0065fc;
+  display: flex;
+}
+.containerInfo {
+  display: flex;
+}
+
+.iconInfo {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 1rem;
+  margin-right: 10px;
+  display: flex;
+}
+
+.iconInfo i {
+  margin: auto;
+  font-size: 0.9rem;
+  color: #0065fc;
+  display: flex;
+}
+
+/* ************************************* PARAMETRES HEBERGEMENT ET POPULAIRES ***************************************/
+
+.hebergementETpopulaire {
+  display: flex;
+}
+
+/************************************************** HEBERGEMENTS ***************************************************/
+
+#Hebergements {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 62%;
+  padding: 20px;
+}
+
+.hebergementmarseille {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel {
+  flex: 30%;
+  background: white;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  box-shadow: 0 5px 16px;
+}
+
+.hotel img {
+  background-color: white;
+  border-radius: 15px 15px 0px 0px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.hotel p {
+  margin: 5px 10px;
+  font-weight: 100;
+}
+
+.hotel h3 {
+  margin: 3px 10px;
+}
+
+.etoilesHebergement {
+  margin: 3px 10px;
+  color: #0065fc;
+}
+
+.greyStar {
+  color: #c1c1c1;
+}
+
+.main {
+  display: flex;
+}
+
+.afficherplus {
+  color: black;
+  padding-left: 8px;
+}
+/**************************************************** POPULAIRES ***************************************************/
+
+#pluspopulaires {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 30%;
+  padding: 20px;
+}
+
+.populaireImage {
+  height: 145px;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 7px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+}
+
+.populaireImage img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+
+.populaireDescription {
+  flex: 1;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+
+.hotelName {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.etoilesPopulaire {
+  color: #0065fc;
+}
+
+.greyStar {
+  color: #c1c1c1;
+}
+.populaireDescription .hotelName + p {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.containerHotelsPopular {
+  box-sizing: content-box;
+  width: 100%;
+}
+
+/**************************************************** ACTIVITES ****************************************************/
+
+/* Mise en forme du titre de la section */
+#Activites h2 {
+  margin-left: 50px;
+}
+
+/* J'aligne mes articles entre eux */
+.containerActivites {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Je donne une taille, des marges et couleur de fond à mes articles/cartes */
+.ActiviteImage {
+  background-color: #ffffff;
+  margin: 20px 0 20px 0;
+  border-radius: 20px;
+  width: 22%;
+}
+
+/* Je donne une marge au titre h3 de mes cartes */
+
+.ActiviteImage h3 {
+  margin-left: 20px;
+}
+
+/*  Je donne une bordure et une ombre aux grandes cartes*/
+.Imageseule {
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
+}
+
+/*  Je donne une bordure et une ombre aux petites cartes situées en haut*/
+.ActiviteImage-top,
+.ActiviteImage-top2 {
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
+}
+
+/*  Je donne une bordure et une ombre aux petites cartes situées en bas + une marge supérieure*/
+.ActiviteImage-bottom,
+.ActiviteImage-bottom2 {
+  border: 1px solid #f2f2f2;
+  margin-top: 40px;
+  box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* Je donne une tailles aux grandes images*/
+
+.activite1img,
+.activite4img {
+  width: 100%;
+  height: 420px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Je donne une tailles aux petites images*/
+
+.activite2img,
+.activite3img,
+.activite5img,
+.activite6img {
+  width: 100%;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+/***************************************************** FOOTER ******************************************************/
+
+/* Alignement et couleur de fond du footer */
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+}
+
+/* J'aligne les éléments "enfants" à l'intérieur des champs/ colonnes*/
+
+.footer-champs {
+  flex: 20%;
+  font-size: 1.2em;
+  padding-left: 50px;
+}
+
+/* Alignements, on gére l'espacement entre les lignes, enlève les puces, couleur */
+
+.footer-champs ul {
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: 2em;
+  text-decoration: none;
+  color: rgb(61, 60, 60);
+  font-weight: 500;
+  padding: 0;
+}
+
+.footer-champs h4 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+/*************************************************** MEDIA QUERIES ***********************************************/
+@media screen and (max-width: 768px) /* pour que l'écran s'adapte a tous écran de smartphnes */ {
+  
+  /*************************************************** RECHERCHE ***************************************************/
+
+  .search {
     margin-left: 30px;
   }
-    .searchButton span{
-      display: none;
-    }
-    .searchButton i{
-      display:block;
-    }
-    /* INFORMATION */
-    .containerInfo {
-      font-size: 15px;
-      color: grey;
-    }
+  .searchButton span {
+    display: none;
+  }
+  .searchButton i {
+    display: block;
+  }
+  /* INFORMATION */
+  .containerInfo {
+    font-size: 15px;
+    color: grey;
+  }
 
-    /***************************************************** NAVIGATION ************************************************/
+  /***************************************************** NAVIGATION ************************************************/
+
+  .logo {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+  }
+  nav li {
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom:20px;
+  }
+  nav li:hover {
+    border-top:inherit;
+    border-bottom: 1px solid #0065FC;
+    padding-bottom:20px;
+  }
+ 
+  nav li a:hover {
+    border-top: inherit;
     
-    .logo{
-      padding-top: 10px;
-      padding-left: 30px;
-    }
-    nav{
-      width: 100%;
-      
-    }
-    nav ul{
-      width: 100%;
-    }
-    nav li {
-      width: 50%;
-    }
-    nav li a 
-    {
-      width: 100%;
-      text-align: center;
-      display: inline-block;
-      border-bottom: 1px solid #c1c1c1;
-    }
-    nav li a:hover{
-
-      border-top:inherit;
-      border-bottom: 1px solid #0065FC;
-    }
+  }
 
   /******************************************************INSCRIPTION**************************************************/
-    .signUp{
+  .signUp {
     position: absolute;
-    top:-9px;
+    top:25px;
     right:5px;
   }
 
   /*************************************************** FILTRE ******************************************************/
-  .textfilter{
-    width:100%;
-    padding:14px;
-    padding-left:5px;
+  .textfilter {
+    width: 100%;
+    padding: 14px;
+    padding-left: 5px;
   }
-  .filter{
-    margin:0px
+  .filter {
+    margin: 0px;
   }
 
   /***************************************************HEBERGEMENT*****************************************************/
-    .hebergementETpopulaire {
-    flex-direction: column-reverse;/* la parti les plus populaire passe en haut avec cette propriete*/
+  .hebergementETpopulaire {
+    flex-direction: column-reverse; /* la parti les plus populaire passe en haut avec cette propriete*/
     width: 100%;
-    }
-    
-    #Hebergements{
-      width: inherit;
-      margin: 0;
-      background-color: inherit;
-      
-    }
-
-    .hebergementmarseille{
-      flex-direction: column;
-      width: 100%;
-    }
-    
-    .showMore{
-      font-size: 17px;
-      font-weight: bold;
-      
-    }
-    /***************************************************HEBERGEMENT POPULAIRE*****************************************/
-    #pluspopulaires{
-      width: 100%;
-      margin: 0;
-      border-radius: inherit;
-    }
-    .fa-chart-line:before{
-      padding-top: 25px;
-    
-    }
-   
-    /*************************************************** ACTIVITES ***************************************************/
- 
-    .containerActivites{
-      flex-direction: column;
-      align-items: flex-start;
-       
-    }
-  .ActiviteImage{
-    width:100%;
-    
-  }
-   
-  .activite1img, .activite4img{
-   
-    height:160px; 
   }
 
-    /*************************************************** FOOTER ***************************************************/
+  #Hebergements {
+    width: inherit;
+    margin: 0;
+    background-color: inherit;
+  }
 
-   
-    .footer-champs{
-      margin: 20px 33px 40px 50px;
-      font-size: 15px;
-     flex-direction: column;
-     
-    }
-    .footer-champs h4{
-      padding-bottom: 10px;
-    }
-} 
+  .hebergementmarseille {
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .showMore {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  /***************************************************HEBERGEMENT POPULAIRE*****************************************/
+  #pluspopulaires {
+    width: 100%;
+    margin: 0;
+    border-radius: inherit;
+  }
+  .fa-chart-line:before {
+    padding-top: 25px;
+  }
+
+  /*************************************************** ACTIVITES ***************************************************/
+
+  .containerActivites {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ActiviteImage {
+    width: 100%;
+  }
+
+  .activite1img,
+  .activite4img {
+    height: 160px;
+  }
+
+  /*************************************************** FOOTER ***************************************************/
+
+  .footer-champs {
+    margin: 20px 33px 40px 50px;
+    font-size: 15px;
+    flex-direction: column;
+  }
+  .footer-champs h4 {
+    padding-bottom: 10px;
+  }
+}
