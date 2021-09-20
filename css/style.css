@@ -4,15 +4,15 @@
 
 body {
   font-family: "Raleway", "Sans serif";
-  margin: 0 auto;
+  /* margin: 0 auto; */
   box-sizing: border-box;
 }
 .containerclass {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
- nav ul {
+nav ul {
   list-style-type: none;
   display: flex;
 }
@@ -33,15 +33,13 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 nav {
   display: flex;
   align-items: center;
 }
 
-
-nav ul{
+nav ul {
   list-style-type: none;
   padding: 30px;
   display: flex;
@@ -54,7 +52,6 @@ nav li a {
 .signUp {
   color: #0065fc;
   font-weight: 700;
-
 }
 
 nav li a:hover {
@@ -66,7 +63,6 @@ nav li a:hover {
 
 .search {
   margin-bottom: 30px;
- 
 }
 
 .search h2 {
@@ -121,8 +117,8 @@ nav li a:hover {
   cursor: pointer;
 }
 
-.searchLoupe{
-  background-color: #0065FC;
+.searchLoupe {
+  background-color: #0065fc;
   border: none;
   width: 50px;
   border-radius: 0 15px 15px 0;
@@ -150,6 +146,7 @@ nav li a:hover {
   padding-right: 20px;
   border-radius: 25px;
   display: flex;
+  margin-left: 20px;
 }
 .textFilter {
   align-self: center;
@@ -191,12 +188,13 @@ nav li a:hover {
   border-radius: 1rem;
   margin-right: 10px;
   display: flex;
+  margin-top: 15px;
 }
 
 .iconInfo i {
   margin: auto;
   font-size: 0.9rem;
-  color: #0065fc;
+  color: hsl(216, 100%, 49%);
   display: flex;
 }
 
@@ -204,6 +202,7 @@ nav li a:hover {
 
 .hebergementETpopulaire {
   display: flex;
+  justify-content: space-between;
 }
 
 /************************************************** HEBERGEMENTS ***************************************************/
@@ -221,12 +220,12 @@ nav li a:hover {
 }
 
 .hotel {
-  flex: 30%;
+  flex: 25%;
   background: white;
   border-radius: 20px;
   padding: 5px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin: 20px;
   box-shadow: 0 5px 16px;
 }
 
@@ -275,6 +274,15 @@ nav li a:hover {
   padding: 20px;
 }
 
+.containerpopulaireicon {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.containerpopulaireicon i {
+  font-size: 20px;
+}
 .populaireImage {
   height: 145px;
   border: 5px solid #fff;
@@ -302,6 +310,9 @@ nav li a:hover {
   display: flex;
 }
 
+.hebergementspopulaire {
+  margin-top: 20px;
+}
 .hotelName {
   margin: 0;
   font-weight: 700;
@@ -425,6 +436,7 @@ footer {
   color: rgb(61, 60, 60);
   font-weight: 500;
   padding: 0;
+  list-style-type: none;
 }
 
 .footer-champs h4 {
@@ -434,18 +446,36 @@ footer {
 
 /*************************************************** MEDIA QUERIES ***********************************************/
 @media screen and (max-width: 768px) /* pour que l'écran s'adapte a tous écran de smartphnes */ {
-  
+  body {
+    margin: 0;
+  }
+  header {
+    width: 100%;
+  }
+
+  .containerclass {
+    width: 100%;
+    margin: 0;
+  }
   /*************************************************** RECHERCHE ***************************************************/
 
-
-  .searchButton{
+  .searchButton {
     display: none;
   }
 
+  /*  On met la loupe un peu + grosse et positionner avec flex*/
   .searchLoupe {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px;
   }
-    /***************************************************** NAVIGATION ************************************************/
+  /* On diminue la width du champs de texte pour mieux aligner la loupe et que l'ensemble du form soit centré*/
+  .searchInput {
+    width: 200px;
+  }
+  /***************************************************** NAVIGATION ************************************************/
 
   .logo {
     padding-top: 10px;
@@ -456,74 +486,156 @@ footer {
   }
   nav ul {
     width: 100%;
+    padding: 30px 0;
   }
+
   nav li {
     width: 50%;
     text-align: center;
-    border-bottom: 3px solid #F2F2F2;
-    padding-bottom:20px;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 20px;
   }
   nav li:hover {
-    border-top:inherit;
-    border-bottom: 1px solid #0065FC;
-    padding-bottom:20px;
+    border-top: inherit;
+    border-bottom: 2px solid #0065fc; /* Augmente légerement la bordure */
+    padding-bottom: 20px;
   }
- 
+
   nav li a:hover {
     border-top: inherit;
-    
+  }
+
+  /* ---- H2 : je le met en H1 (html) car titre principal, et on diminue un peu le font-size et on le centre*/
+
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* On centre le paragraphe (p) sous le titre */
+
+  .search p {
+    text-align: center;
+  }
+
+  .searchBar {
+    margin: 0 10px;
+    justify-content: center;
   }
 
   /******************************************************INSCRIPTION**************************************************/
   .signUp {
     position: absolute;
-    top:25px;
-    right:5px;
+    top: 25px;
+    right: 5px;
   }
 
   /*************************************************** FILTRE ******************************************************/
+  /* On ajoute un padding-left sur l'ensemble des éléments de filtres */
+  .filters {
+    padding-left: 1rem;
+  }
+  /* On enlève le pading-right sur les éléments de filtres, on met un font-size, et une marge haut et droite*/
+  .filter {
+    padding-right: 0;
+    font-size: 1rem;
+    margin: 10px 10px 0 0;
+  }
+  /* On centre le span dans son élément*/
+  .filter span {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .textfilter {
     width: 100%;
     margin-bottom: 15px;
   }
-  
+
+  /* Pour le texte sous les filtres, pas besoin de div pour l'icone mais par contre le texte doit être dans une balise <p> */
+  /* On change cela dans le HTML*/
+  .containerInfo {
+    font-size: 0.9rem;
+    margin: 0 10px 0 10px;
+  }
+
+  /* On positionne le paragraphe */
+  .containerInfo p {
+    margin: 10px 0 10px 5px;
+  }
+
+  /* On positionne l'icone : une icone n'as pas besoin de height ou width mais tu la dimensionne avec font-size et des paddings */
+  .iconInfo {
+    padding: 2px 5px;
+    margin: 0;
+  }
+
+  /* Titre section populaire - On ajoute une class (en html) car ce titre doit se positionner avec l'icone */
+  /*  On aligne l'icone et le titre avec flex/ space-between et un padding*/
+  .titresectionpop {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .titresection {
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
 
   /***************************************************HEBERGEMENT*****************************************************/
   .hebergementETpopulaire {
     flex-direction: column-reverse; /* la parti les plus populaire passe en haut avec cette propriete*/
     width: 100%;
   }
+  /* On ajoute le padding sur cette div (qui est peut être de trop d'ailleurs) */
+  .hotelpopulaire {
+    padding: 0 10px;
+  }
 
   #Hebergements {
     width: inherit;
     margin: 0;
+    padding: 0; /* on ajoute padding:0 car width de 100% + padding = trog grand et cela te créer un dépassement */
     background-color: inherit;
   }
 
+  /* J'enlève la width de 100% et je mets mon padding ici sinon 100% + padding...*/
+  /* De plus pas besoin de width car lélement parent s'adapte à la taille des éléments enfants (ici les images)*/
   .hebergementmarseille {
     flex-direction: column;
-    width: 100%;
+    padding: 0 10px;
   }
 
   .showMore {
     font-size: 17px;
     font-weight: bold;
+    width: 50%;
+    margin: 20px 5px;
   }
   /***************************************************HEBERGEMENT POPULAIRE*****************************************/
   #pluspopulaires {
     width: 100%;
     margin: 0;
+    padding: 0; /* on ajoute padding:0 car width de 100% + padding = trog grand et cela te créer un dépassement */
     border-radius: inherit;
   }
   .fa-chart-line:before {
     padding-top: 25px;
   }
-
+  .containerpopulaireicon {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   /*************************************************** ACTIVITES ***************************************************/
-
+  /* Ici on est obligé de modifier le titre malgré qu'il est la class titresection (déjà mis en style) car ce style a été appliqué en dehors des media queries */
+  #Activites h2 {
+    margin-left: 10px;
+  }
   .containerActivites {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 10px; /* Je mets le padding ici*/
   }
   .ActiviteImage {
     width: 100%;
@@ -536,12 +648,37 @@ footer {
 
   /*************************************************** FOOTER ***************************************************/
 
+  /* sur la maquette les champs ne sont pas centrés. On enléve donc un peu de marge à gauche */
+  footer {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .footer-champs {
-    margin: 20px 33px 40px 50px;
     font-size: 15px;
     flex-direction: column;
+    padding-left: 20px;
   }
-  .footer-champs h4 {
-    padding-bottom: 10px;
+
+  .footer-champs li {
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 520px) /* pour que l'écran s'adapte a tous écran de smartphnes */ {
+  .search h1 {
+    text-align: inherit;
+    padding-left: 15px;
+  }
+  .search p {
+    text-align: inherit;
+    padding-left: 15px;
+  }
+
+  .searchBar {
+    justify-content: inherit;
+  }
+  footer {
+    flex-flow: column nowrap;
   }
 }
