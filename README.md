@@ -1,6 +1,11 @@
 Projet 2 Reservia
 
 
+
+![Desktop - 1](https://user-images.githubusercontent.com/61310906/134330724-32d6d378-38ce-4e02-87d1-8d7226dd65d0.png)
+
+
+
 * Fonctionnalités: 
  
 - Le champ de recherche est donc un champ de saisie,dont le texte peut être édité par l’usager. 
