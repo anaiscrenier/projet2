@@ -668,15 +668,16 @@ footer {
 @media screen and (max-width: 520px) /* pour que l'écran s'adapte a tous écran de smartphnes */ {
   .search h1 {
     text-align: inherit;
-    padding-left: 15px;
+    padding-left: 65px;
+    
   }
   .search p {
     text-align: inherit;
-    padding-left: 15px;
+    padding-left:65px;
   }
 
   .searchBar {
-    justify-content: inherit;
+    justify-content: center;
   }
   footer {
     flex-flow: column nowrap;
